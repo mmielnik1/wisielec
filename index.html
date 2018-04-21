@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Wisielec</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="format.css" type="text/css" />
+        <script type="text/javascript" src="funkcje.js"></script>
+    </head>
+    <body>
+        <div id="kontener">
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="3"><button id="clear" onclick="wyczysc()">Nowe hasło</button></td>
+                    </tr>
+                    <tr>
+                        <td>Podaj hasło</td>
+                        <td><input id="pole1" type="password" ></td>
+                        <td><button id="OK" onclick="przygotowanie() ">Zatwierdź hasło</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input id="pole2"  disabled="disabled"  class="zgadywanie"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <td><button id="a" onclick="litera('A')">A</button></td>
+                    <td><button id="ą" onclick="litera('Ą')">Ą</button></td>
+                    <td><button id="b" onclick="litera('B')">B</button></td>
+                    <td><button id="c" onclick="litera('C')">C</button></td>
+                    <td><button id="ć" onclick="litera('Ć')">Ć</button></td>
+                    <td><button id="d" onclick="litera('D')">D</button></td>
+                    <td><button id="e" onclick="litera('E')">E</button></td>
+                    <td><button id="ę" onclick="litera('Ę')">Ę</button></td>
+                    <td><button id="f" onclick="litera('F')">F</button></td>
+                    <td><button id="g" onclick="litera('G')">G</button></td>
+                    <td><button id="h" onclick="litera('H')">H</button></td>
+                </tr>
+                <tr>
+                    <td><button id="i" onclick="litera('I')">I</button></td>
+                    <td><button id="j" onclick="litera('J')">J</button></td>
+                    <td><button id="k" onclick="litera('K')">K</button></td>
+                    <td><button id="l" onclick="litera('L')">L</button></td>
+                    <td><button id="ł" onclick="litera('Ł')">Ł</button></td>
+                    <td><button id="m" onclick="litera('M')">M</button></td>
+                    <td><button id="n" onclick="litera('N')">N</button></td>
+                    <td><button id="ń" onclick="litera('Ń')">Ń</button></td>
+                    <td><button id="o" onclick="litera('O')">O</button></td>
+                    <td><button id="ó" onclick="litera('Ó')">Ó</button></td>
+                    <td><button id="p" onclick="litera('P')">P</button></td>
+                </tr>
+                <tr>
+                    <td><button id="r" onclick="litera('R')">R</button></td>
+                    <td><button id="s" onclick="litera('S')">S</button></td>
+                    <td><button id="ś" onclick="litera('Ś')">Ś</button></td>
+                    <td><button id="t" onclick="litera('T')">T</button></td>
+                    <td><button id="u" onclick="litera('U')">U</button></td>
+                    <td><button id="w" onclick="litera('W')">W</button></td>
+                    <td><button id="x" onclick="litera('X')">X</button></td>
+                    <td><button id="y" onclick="litera('Y')">Y</button></td>
+                    <td><button id="z" onclick="litera('Z')">Z</button></td>
+                    <td><button id="ź" onclick="litera('Ź')">Ź</button></td>
+                    <td><button id="ż" onclick="litera('Ż')">Ż</button></td>
+                </tr>
+                <tr><td colspan="11">Do przegranej pozostało: <input disabled="disabled" id="ile"> szans</td></tr>
+                <tr><td colspan="11">Do odgadniecia pozostało: <input disabled="disabled" id="zostalo"> liter</td></tr>
+            </table>
+        </div>
+    </body>
+</html>
